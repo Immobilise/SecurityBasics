@@ -4,40 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Security Basics</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
 </head>
 <body>
     <nav>
-      <div class="logo">SEND</div>
+        <div class="logo">
+            <img src="logo.png">
+        </div>
       <div class="nav-items">
         <a href="/">Home</a> <a href="./physicalSecurity.html">Physical Security</a> <a href="./digitalSecurity.html">Digital Security</a> <a href="./communications.html">Communications</a>
       </div>
     </nav>
     <section class="hero">
-      <div class="hero-container">
-        <div class="column-left">
-          <h1>Personal Technical Security</h1>
-          <p>
-            A concise guide to enhancing your safety in the digital world.
-          </p>
-          <button>Get Started</button>
-        </div>
-        <div class="column-right">
-            <a href="./physicalSecurity.html" title="Physical Security">
-                <img src="./person.png" alt="illustration" class="hero-image" />
-            </a>
+        <div class="hero-container">
+            <div class="column-left">
+              <h1>Personal Technical Security</h1>
+              <p>A concise guide to enhancing your safety in the digital world.</p>
+            </div>
+            <!-- Images and Sections-->
+          <div class="hero-section" id="physical">
+            <img src="./person.png" alt="Physical Security" class="hero-image" />
           </div>
-          <div class="column-right">
-            <a href="./digitalSecurity" title="Digital Security">
-            <img src="./digital.png" alt="illustration" class="hero-image"/>
-            </a>
+          <h2>Physical Security</h2>
+            <a href="./physicalSecurity.html" class="button">Get Started</a>
+
+          <div class="hero-section" id="digital">
+            <img src="./digital.png" alt="Digital Security" class="hero-image" />
           </div>
-          <div class="column-right">
-            <a href="./communications.html" title="Communications">
-                <img src="./globe.png" alt="illustration" class="hero-image"/>
-                </a>
+          <h2>Digital Security</h2>
+            <a href="./digitalSecurity.html" class="button">Get Started</a>
+            
+          <div class="hero-section" id="communications">
+            <img src="./globe.png" alt="Communications" class="hero-image" />
           </div>
-      </div>
+          <h2>Communications</h2>
+            <a href="./communications.html" class="button">Get Started</a>
+          </div>
+
     </section>
   </body>
 </html>

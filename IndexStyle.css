@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    height: 80px;
+    background: #6200EE; /* Example primary color from MD3 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow for depth */
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0 1.5rem;
+    transition: color 0.3s ease; /* smooth transition for hover effects */
+}
+
+nav a:hover {
+    color: #B39DDB; /* lighter purple for hover state */
+}
+
+.logo {
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.logo img {
+    max-height: 80px; /* Adjust the height of the logo */
+    max-width: 100%; /* Ensure the logo stays within the container */
+    display: block; /* Ensures the logo image is displayed as a block element */
+}
+
+/* Homepage Content Styles */
+.hero-container {
+    text-align: center; /* Center-align text for all content within the container */
+}
+
+.column-left {
+    width: 100%; /* Ensures the column takes full width */
+}
+
+.column-left h1, .column-left p {
+    margin: 0 auto; /* Centers title and paragraph */
+    padding: 1rem; /* Adds some padding */
+}
+
+/* Image Section Styles */
+.hero-section {
+    display: flex;
+    justify-content: center; /* Center the hero-section items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+}
+
+.hero-image {
+    max-width: 33%; /* Each image will take up a third of the hero section's width */
+    height: auto; /* Keep the aspect ratio of the images */
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6200EE; /* Primary color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image {
+        max-width: 100%; /* Full width on smaller screens */
+        margin-top: 20px; /* Adds space between stacked images */
+    }
+}
