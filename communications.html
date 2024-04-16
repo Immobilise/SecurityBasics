@@ -3,47 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the importance of secure communication methods and tools to protect sensitive information online.">
+    <meta name="keywords" content="communication security, encryption, secure messaging, email security, video conferencing, digital security, cybersecurity, data encryption, password management, two-factor authentication">
     <title>Security Basics</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        .hero-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .column-left {
-            flex: 1;
-            padding-right: 20px;
-        }
-
-        .column-right {
-            flex: 1;
-            padding-left: 20px;
-            margin-top: 20px; /* Add space between text and image */
-            text-align: center; /* Center the image */
-        }
-
-        .hero-image {
-            max-width: 100%;
-            height: auto;
-        }
-
-        @media screen and (max-width: 768px) {
-            .hero-container {
-                flex-direction: column;
-            }
-
-            .column-right {
-                padding-left: 0;
-                text-align: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="slider.css">
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="logo.png">
+            <a href="./index.html"><img src="logo.png" alt="Logo"></a>
         </div>
         <div class="nav-items">
             <a href="/">Home</a>
@@ -51,60 +20,72 @@
             <a href="./digitalSecurity.html">Digital Security</a>
             <a href="./communications.html">Communications</a>
         </div>
-    </nav>
+    </nav> 
     <section class="hero">
         <div class="hero-container">
             <div class="column-left">
-                <h1>Communications</h1>
-
-                <h2>Importance of Communication Security</h2>
-                <p>Communication security is crucial in today's digital landscape, where information exchange occurs across various platforms. Ensuring the confidentiality, integrity, and authenticity of communication channels is essential for safeguarding sensitive data and maintaining trust.</p>
-
-                <h3>Overview</h3>
-                <ul>
-                    <li><strong>Secure Communication:</strong> Protecting communication channels from unauthorized access and interception is paramount to prevent data breaches and privacy violations.</li>
-                    <li><strong>Encryption:</strong> Encrypting communication data ensures that it remains confidential and cannot be deciphered by unauthorized parties.</li>
-                    <li><strong>Secure Platforms:</strong> Using trusted and secure platforms for messaging, email, video conferencing, and social media minimizes the risk of eavesdropping and tampering.</li>
-                </ul>
-
-                <h3>Highlights</h3>
-                <ul>
-                    <li><strong>🔒 Confidentiality:</strong> Secure communication channels ensure that sensitive information remains private and inaccessible to unauthorized individuals or entities.</li>
-                    <li><strong>🔐 Integrity:</strong> Maintaining the integrity of communication data prevents unauthorized modifications or tampering, preserving its accuracy and reliability.</li>
-                    <li><strong>🛡️ Authenticity:</strong> Verifying the authenticity of communication participants and messages helps prevent impersonation and identity theft, fostering trust and accountability.</li>
-                    <li><strong>🌐 Secure Platforms:</strong> Using platforms with built-in encryption and security features, such as end-to-end encryption for messaging apps, enhances communication security.</li>
-                    <li><strong>🔍 Protection Against Threats:</strong> Implementing security measures, such as firewalls, antivirus software, and intrusion detection systems, protects communication channels from cyber threats.</li>
-                    <li><strong>📜 Compliance Requirements:</strong> Adhering to regulatory standards and compliance requirements, such as GDPR and HIPAA, ensures that communication practices meet legal and industry-specific security standards.</li>
-                </ul>
-
-                <h2>Social Engineering</h2>
-                <p>Social engineering is a tactic used by cybercriminals to manipulate individuals into divulging confidential information or performing actions that may compromise security.</p>
-
-                <h3>Overview</h3>
-                <ul>
-                    <li><strong>Definition:</strong> Social engineering involves exploiting human psychology to gain access to systems, networks, or sensitive information.</li>
-                    <li><strong>Common Techniques:</strong> Phishing, pretexting, baiting, tailgating, and quid pro quo are some common social engineering techniques.</li>
-                    <li><strong>Targets:</strong> Individuals, employees, and organizations are often targeted through various communication channels, including email, phone calls, and social media.</li>
-                </ul>
-
-                <h3>Highlights</h3>
-                <ul>
-                    <li><strong>🎣 Phishing Attacks:</strong> Phishing emails often impersonate trusted entities to trick recipients into providing personal information or clicking on malicious links.</li>
-                    <li><strong>🎭 Pretexting:</strong> Social engineers create false scenarios or personas to manipulate individuals into disclosing sensitive information.</li>
-                    <li><strong>🍬 Baiting:</strong> Attackers offer something enticing, such as free software or a USB drive, containing malware to infect the victim's device.</li>
-                    <li><strong>🚪 Tailgating:</strong> By following closely behind an authorized person, an attacker gains physical access to restricted areas or systems.</li>
-                    <li><strong>💼 Quid Pro Quo:</strong> Social engineers promise a benefit in exchange for sensitive information or access, such as offering technical support in exchange for login credentials.</li>
-                    <li><strong>🧠 Security Awareness:</strong> Educating individuals about social engineering tactics and promoting a culture of skepticism can help mitigate the risk of successful attacks.</li>
-                    <li><strong>🔒 Two-Factor Authentication (2FA):</strong> Implementing 2FA adds an extra layer of security, making it harder for attackers to access accounts even if they obtain login credentials.</li>
-                    <li><strong>🔍 Verification Protocols:</strong> Establishing verification procedures for sensitive transactions or information requests can help validate the legitimacy of requests and prevent unauthorized access.</li>
-                </ul>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide">
+                            <h2>Social Engineering</h2>
+                            <p>Social engineering is a tactic used by cybercriminals to manipulate individuals into divulging confidential information or performing actions that may compromise security.</p>
+            
+                            <h3>Overview</h3>
+                            <ul>
+                                <li><strong>Definition:</strong> Social engineering involves exploiting human psychology to gain access to systems, networks, or sensitive information.</li>
+                                <li><strong>Common Techniques:</strong> Phishing, pretexting, baiting, tailgating, and quid pro quo are some common social engineering techniques.</li>
+                                <li><strong>Targets:</strong> Individuals, employees, and organizations are often targeted through various communication channels, including email, phone calls, and social media.</li>
+                            </ul>
+            
+                            <h3>Highlights</h3>
+                            <ul>
+                                <li><strong>🎣 Phishing Attacks:</strong> Phishing emails often impersonate trusted entities to trick recipients into providing personal information or clicking on malicious links.</li>
+                                <li><strong>🎭 Pretexting:</strong> Social engineers create false scenarios or personas to manipulate individuals into disclosing sensitive information.</li>
+                                <li><strong>🍬 Baiting:</strong> Attackers offer something enticing, such as free software or a USB drive, containing malware to infect the victim's device.</li>
+                                <li><strong>🚪 Tailgating:</strong> By following closely behind an authorized person, an attacker gains physical access to restricted areas or systems.</li>
+                                <li><strong>💼 Quid Pro Quo:</strong> Social engineers promise a benefit in exchange for sensitive information or access, such as offering technical support in exchange for login credentials.</li>
+                                <li><strong>🧠 Security Awareness:</strong> Educating individuals about social engineering tactics and promoting a culture of skepticism can help mitigate the risk of successful attacks.</li>
+                                <li><strong>🔒 Two-Factor Authentication (2FA):</strong> Implementing 2FA adds an extra layer of security, making it harder for attackers to access accounts even if they obtain login credentials.</li>
+                                <li><strong>🔍 Verification Protocols:</strong> Establishing verification procedures for sensitive transactions or information requests can help validate the legitimacy of requests and prevent unauthorized access.</li>
+                            </ul>                        
+                        </div>
+                        <div class="slide">
+                            <h2>Importance of Communication Security</h2>
+                            <p>Communication security is crucial in today's digital landscape, where information exchange occurs across various platforms. Ensuring the confidentiality, integrity, and authenticity of communication channels is essential for safeguarding sensitive data and maintaining trust.</p>
+            
+                            <h3>Overview</h3>
+                            <ul>
+                                <li><strong>Secure Communication:</strong> Protecting communication channels from unauthorized access and interception is paramount to prevent data breaches and privacy violations.</li>
+                                <li><strong>Encryption:</strong> Encrypting communication data ensures that it remains confidential and cannot be deciphered by unauthorized parties.</li>
+                                <li><strong>Secure Platforms:</strong> Using trusted and secure platforms for messaging, email, video conferencing, and social media minimizes the risk of eavesdropping and tampering.</li>
+                            </ul>
+            
+                            <h3>Highlights</h3>
+                            <ul>
+                                <li><strong>🔒 Confidentiality:</strong> Secure communication channels ensure that sensitive information remains private and inaccessible to unauthorized individuals or entities.</li>
+                                <li><strong>🔐 Integrity:</strong> Maintaining the integrity of communication data prevents unauthorized modifications or tampering, preserving its accuracy and reliability.</li>
+                                <li><strong>🛡️ Authenticity:</strong> Verifying the authenticity of communication participants and messages helps prevent impersonation and identity theft, fostering trust and accountability.</li>
+                                <li><strong>🌐 Secure Platforms:</strong> Using platforms with built-in encryption and security features, such as end-to-end encryption for messaging apps, enhances communication security.</li>
+                                <li><strong>🔍 Protection Against Threats:</strong> Implementing security measures, such as firewalls, antivirus software, and intrusion detection systems, protects communication channels from cyber threats.</li>
+                                <li><strong>📜 Compliance Requirements:</strong> Adhering to regulatory standards and compliance requirements, such as GDPR and HIPAA, ensures that communication practices meet legal and industry-specific security standards.</li>
+                            </ul>   
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button class="prev" onclick="prevSlide()">Previous</button>
+                        <button class="next" onclick="nextSlide()">Next</button>
+                    </div>
+                </div>
+                                 
             </div>
             <div class="column-right">
                 <a href="./communications.html" title="Communications">
                     <img src="./globe.png" alt="illustration" class="hero-image"/>
-                </a>
+                </a>            
             </div>
         </div>
     </section>
+
+    <script src="slider.js" defer></script>
 </body>
 </html>

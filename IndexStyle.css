@@ -12,39 +12,48 @@ body, html {
 
 /* Navigation Bar */
 nav {
-    height: 80px;
-    background: #6200EE; /* Example primary color from MD3 */
+    height: auto;
+    background: #6200EE;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items to the left */
     align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow for depth */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-size-adjust: 2;
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: none; /* Remove bold text decoration */
+    font-weight: bold; /* Set font weight to bold */
     color: #FFFFFF;
     padding: 0 1.5rem;
-    transition: color 0.3s ease; /* smooth transition for hover effects */
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #B39DDB; /* lighter purple for hover state */
+    color: #B39DDB;
 }
 
 .logo {
-    padding: 10px; /* Adjust padding as needed */
+    padding: 10px;
 }
 
 .logo img {
-    max-height: 80px; /* Adjust the height of the logo */
-    max-width: 100%; /* Ensure the logo stays within the container */
-    display: block; /* Ensures the logo image is displayed as a block element */
+    max-height: 60px;
+    max-width: 100%;
 }
 
 /* Homepage Content Styles */
+.hero {
+    background: linear-gradient(to bottom, #a5d7ff 0%, #ffffff 100%);
+}
+
 .hero-container {
     text-align: center; /* Center-align text for all content within the container */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: space-around; /* Distribute items evenly along the main axis */
 }
 
 .column-left {
@@ -58,27 +67,29 @@ nav a:hover {
 
 /* Image Section Styles */
 .hero-section {
-    display: flex;
-    justify-content: center; /* Center the hero-section items horizontally */
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    flex: 1;
+    text-align: center;
+    margin: 0 10px; /* Add some space between sections */
 }
 
 .hero-image {
-    max-width: 33%; /* Each image will take up a third of the hero section's width */
-    height: auto; /* Keep the aspect ratio of the images */
+    max-width: 100%; /* Make sure images don't exceed container width */
+    height: auto;
+    margin-bottom: 10px; /* Add space between image and title/button */
 }
 
 .button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 1rem 3rem;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 2rem; /* Adjusted button padding */
     font-size: 1rem;
-    text-decoration: none;
+    text-decoration:solid;
     color: #ffffff;
     background-color: #6200EE; /* Primary color */
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 200px;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,0 +1,55 @@
+.slider-container {
+    position: relative;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 50px; /* Added padding to accommodate buttons */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: calc(100% - 40px); /* Adjusted width to accommodate padding */
+    margin: 0 auto; /* Center the slide horizontally */
+    padding: 40px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+.slide h2 {
+    text-align: center;
+}
+
+.slide ul, p {
+    text-align: left;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 0; /* Adjusted to 0 to align with the bottom edge of the slider-container */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev,
+.next {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6200EE; /* Primary color */
+    border: none;
+    border-radius: 25px; /* Make buttons rounder */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+    margin: 0 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #B39DDB; /* Lighter color on hover */
+}
