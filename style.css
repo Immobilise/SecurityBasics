@@ -58,6 +58,7 @@ nav a:hover {
     }
 }
 /* Homepage Content Styles */
+
 .hero {
     background: linear-gradient(to bottom, #a5d7ff 0%, #ffffff 100%);
     padding: 20px;
@@ -85,12 +86,14 @@ nav a:hover {
     flex: 1;
     text-align: center;
     margin: 0 10px; /* Add some space between sections */
+    pointer-events: auto; /* Allow pointer events on the hero section */
 }
 
 .hero-image {
     max-width: 100%; /* Make sure images don't exceed container width */
     height: auto;
     margin-bottom: 10px; /* Add space between image and title/button */
+    pointer-events: auto; /* Allow pointer events on the hero image */
 }
 
 .button {
@@ -189,7 +192,7 @@ ul {
 /* Base styles for footer */
 footer {
     text-align: center; /* Center-align content */
-    position: fixed; /* Fixed position */
+    /* position: fixed; */ /* Remove fixed positioning */
     bottom: 0; /* Stick to the bottom */
     width: 100%; /* Full width */
 }
