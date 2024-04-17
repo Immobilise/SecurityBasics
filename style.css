@@ -91,7 +91,8 @@ nav a:hover {
 
 .hero-image {
     max-width: 100%; /* Make sure images don't exceed container width */
-    height: auto;
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Automatically adjust height while maintaining aspect ratio */
     margin-bottom: 10px; /* Add space between image and title/button */
     pointer-events: auto; /* Allow pointer events on the hero image */
 }
@@ -192,7 +193,7 @@ ul {
 /* Base styles for footer */
 footer {
     text-align: center; /* Center-align content */
-    /* position: fixed; */ /* Remove fixed positioning */
+    position: fixed;  /* Remove fixed positioning */
     bottom: 0; /* Stick to the bottom */
     width: 100%; /* Full width */
 }
