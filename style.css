@@ -121,6 +121,12 @@ ul {
     padding-left: 20px;
 }
 
+.column-right {
+    padding: 0;
+    text-align: right;
+    flex-basis: auto;
+}
+
 /* Add responsiveness */
 @media (max-width: 768px) {
     .hero-container {
@@ -163,8 +169,6 @@ ul {
 
 /* Base styles for footer */
 footer {
-    background-color: #f0f0f0; /* Background color */
-    padding: 20px; /* Padding for content */
     text-align: center; /* Center-align content */
     position: fixed; /* Fixed position */
     bottom: 0; /* Stick to the bottom */
