@@ -37,7 +37,26 @@ nav a:hover {
     max-height: 60px;
     max-width: 100%;
 }
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack the nav items vertically */
+        padding: 10px; /* Reduce padding */
+        text-align: center; /* Center-align nav items */
+    }
 
+    nav a {
+        padding: 10px 0; /* Add padding top and bottom, remove left and right padding */
+        width: 100%; /* Full width */
+        box-sizing: border-box; /* Include padding in width */
+        display: block; /* Stack links */
+    }
+
+    .logo img {
+        height: auto;
+        max-width: 80%; /* Reduce the logo size to fit the screen */
+        margin-bottom: 10px; /* Add space below the logo */
+    }
+}
 /* Homepage Content Styles */
 .hero {
     background: linear-gradient(to bottom, #a5d7ff 0%, #ffffff 100%);

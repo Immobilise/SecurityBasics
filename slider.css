@@ -1,34 +1,42 @@
 .slider-container {
+    /* Positioning and sizing */
     position: relative;
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
-    padding-bottom: 50px; /* Added padding to accommodate buttons */
+    padding-bottom: 50px; /* Padding for buttons */
 }
 
 .slider {
+    /* Flexbox layout for slides */
     display: flex;
     transition: transform 0.5s ease;
 }
 
 .slide {
+    /* Slide styling */
     flex: 0 0 auto;
     width: calc(100% - 40px); /* Adjusted width to accommodate padding */
-    margin: 0 auto; /* Center the slide horizontally */
+    margin: 0 auto;
     padding: 40px;
-    box-sizing: border-box; /* Include padding in the width calculation */
+    box-sizing: border-box;
 }
+
 .slide h2 {
+    /* Center-align slide headings */
     text-align: center;
 }
 
-.slide ul, p {
+.slide ul,
+p {
+    /* Left-align text in slides */
     text-align: left;
 }
 
 .button-container {
+    /* Button container positioning */
     position: absolute;
-    bottom: 0; /* Adjusted to 0 to align with the bottom edge of the slider-container */
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -37,13 +45,14 @@
 
 .prev,
 .next {
-    padding: 10px 20px; /* Adjust button padding */
+    /* Button styling */
+    padding: 10px 20px;
     font-size: 1rem;
     text-decoration: none;
     color: #ffffff;
     background-color: #6200EE; /* Primary color */
     border: none;
-    border-radius: 25px; /* Make buttons rounder */
+    border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition for hover effects */
     margin: 0 10px;
@@ -51,5 +60,6 @@
 
 .prev:hover,
 .next:hover {
+    /* Button hover effect */
     background-color: #B39DDB; /* Lighter color on hover */
 }
